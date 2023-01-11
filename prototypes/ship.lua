@@ -57,7 +57,7 @@ data:extend(
           name = "wave_circle",
           deviation = {0.8, 0.8},
           frequency = 15,
-          position = {0, 3},
+          position = {0, 5},
           starting_frame = 0,
           starting_frame_deviation = 60,
           height = 0,
@@ -145,42 +145,7 @@ data:extend(
         }
       }
     },
-    turret_animation =
-    {
-      layers =
-      {
-        --[[{
-          filename = "__base__/graphics/entity/tank/turret.png",
-          line_length = 8,
-          width = 92,
-          height = 69,
-          frame_count = 1,
-          direction_count = 64,
-          shift = {-0.15625, -1.07812},
-          animation_speed = 8,
-        },
-        {
-          filename = "__base__/graphics/entity/tank/turret-mask.png",
-          line_length = 8,
-          width = 38,
-          height = 29,
-          frame_count = 1,
-          apply_runtime_tint = true,
-          direction_count = 64,
-          shift = {-0.15625, -1.23438},
-        },
-        {
-          filename = "__base__/graphics/entity/tank/turret-shadow.png",
-          line_length = 8,
-          width = 95,
-          height = 67,
-          frame_count = 1,
-          draw_as_shadow = true,
-          direction_count = 64,
-          shift = {1.70312, 0.640625},
-        }]]
-      }
-    },
+    turret_animation = nil,
     turret_rotation_speed = 0.35 / 60,
     turret_return_timeout = 300,
     stop_trigger_speed = 0.2,

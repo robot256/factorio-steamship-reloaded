@@ -6,22 +6,23 @@ local function unlock(recipe)
 end
 
 data:extend ({
-{
-  type = "technology",
-  name = "primitive_water_transport",
-  icon = "__steamship-reloaded__/graphics/icons/ship.png",
-  icon_size = 32,
-  effects = {
-    unlock("kuter"),
-  },
-  prerequisites = {"automobilism"},
-  unit = {
-    count = 100,
-    ingredients = {
-      {"automation-science-pack", 1},
-      {"logistic-science-pack", 1},
+  {
+    type = "technology",
+    name = "steam_water_transport",
+    icon = "__steamship-reloaded__/graphics/icons/ship.png",
+    icon_size = 32,
+    effects = {
+      unlock("kuter"),
     },
-    time = 30
-  },
-  order = "c-g-a",
+    prerequisites = {"logistics-2"},
+    unit = {
+      count = 100,
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+      },
+      time = 30
+    },
+    order = "c-g-a",
+  }
 })
