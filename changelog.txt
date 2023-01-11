@@ -1,0 +1,7 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 2023-01-10
+  Features:
+    - Initial release
+    - Steam-powered boat using the steamship graphics from https://mods.factorio.com/mod/Ships
+    - Uses the Cargo Ships API to allow easy entering and exiting.
