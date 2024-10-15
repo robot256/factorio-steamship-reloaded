@@ -36,11 +36,12 @@ data:extend(
     },
     collision_box = {{-1.35, -3.1}, {1.35, 3.1}},
     selection_box = {{-1.35, -3.1}, {1.35, 3.1}},
-    collision_mask = {'ground-tile', 'train-layer'},
+    collision_mask = {layers={['ground_tile']=true, ['train']=true}},
     effectivity = 0.1,
     braking_power = "4000kW",
-    burner =
+    energy_source =
     {
+      type = "burner",
       effectivity = 3,
       fuel_inventory_size = 4,
       smoke =
@@ -169,8 +170,6 @@ data:extend(
         }
       },
     },
-    sound_minimum_speed = 0.12;
-    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.9 },
     working_sound =
     {
       sound =
@@ -221,13 +220,13 @@ data:extend({
     energy_required = 120,
     ingredients = 
       {
-        {"engine-unit",45},
-        {"advanced-circuit",150},
-        {"iron-gear-wheel",150},
-        {"iron-plate",400},
-        {"steel-plate",200},
-        {"copper-plate",300}
+        {type="item", name="engine-unit", amount=45},
+        {type="item", name="advanced-circuit", amount=150},
+        {type="item", name="iron-gear-wheel", amount=150},
+        {type="item", name="iron-plate", amount=400},
+        {type="item", name="steel-plate", amount=200},
+        {type="item", name="copper-plate", amount=300}
       },
-    result = "kuter"
+    results = {{type="item", name="kuter", amount=1}}
   }
 })
